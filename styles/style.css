@@ -43,53 +43,50 @@ body {
  
  .address {
     justify-self: end;
-    align-self: center;
     max-width: 240px;
     width: 100%;
+    
 
-    /*padding-top: 5px;
-    padding-bottom: 2px;*/
+    padding-top: 5px;
+    padding-bottom: 2px;
  }
 
 .cover {
     position: relative;
-    height: 757px;
+    max-height: 757px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
     z-index: -1;
-    /*padding: 165px 50px 237px 50px;*/
 }
 
 .overlay {
     position: absolute;
     background-color: #000;
-    background-repeat: no-repeat;
-    background-position: center;
     opacity: 60%;
     height: 100%;
     width: 100%;
     z-index: 0;
+    inset: 0;
 }
 
 .cover-title {
-    position: absolute;
+    z-index: 1;
+    position: relative;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
-    z-index: 1;
-    inset: 165px 50px 237px 50px;
-    max-width: 1000px;
+    /*row-gap: 20px;*/
+    padding: 165px 50px 135px;
+    max-width: 1100px;
 
 }
 
 .cover-description {
     z-index: 1;
-    position: absolute;
-    inset: 667px 385px 62px 78px;
+    position: relative;
+    padding: 0 50px 51px 78px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 972px;
     align-items: center;
 }
 
@@ -101,13 +98,69 @@ body {
 }
 
 .lots {
-    margin: 179px 24px 146px 24px;
+    width: 1052px;
+    margin: 179px auto 0;
 }
+
+.lot__list-card {
+    list-style-type: none;
+    display: flex;
+    column-gap: 25px;
+}
+
+.lots__card-list-item {
+    max-width: 334px;
+    min-height: 563px;
+    flex-grow: 1;
+
+}
+
+.card-link {
+    display: block;
+    height: 100%;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 51px 40px 48px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
+.lots__heading {
+    padding-right: 40px;
+    padding-bottom: 27px;
+}
+
+
+
+
+
+
+
 
 .about {
     margin: 0 24px;
 }
 
 .footer {
-    margin: 180px 50px 88px 50px;
+    margin: 180px auto 88px;
 }

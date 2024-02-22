@@ -46,16 +46,13 @@
 .cover-title  {
   font-size: 100px;
   font-weight: 700;
-  line-height: 115px;
   text-transform: uppercase;
-  letter-spacing: 0.3em;
-  
+  letter-spacing: ;
 }
 
-.aligned-text {
+.aligned-text { 
   text-align: left;
   align-self: flex-start;
-  
 }
 
 .aligned-center {
@@ -70,7 +67,7 @@
 }
 
 .leter-spacing-extended {
-  letter-spacing: 0.6em;
+  letter-spacing: ;
 }
 
 .no-letter-spacing {
@@ -91,4 +88,39 @@
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+}
+
+.lots__heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 47px;
+  text-align: left;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.card-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.card-link {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  color: #fff;
+}
+
+.lots__look-more-link {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
 }
