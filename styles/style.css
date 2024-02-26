@@ -4,8 +4,8 @@ body {
 }
  
 .header {
-    max-width: 1052px;
-    display: grid;  
+    display: grid;
+    max-width: 1052px;  
     grid-template-columns: 1fr 148px 1fr;
     justify-items: stretch;
     align-items: center;
