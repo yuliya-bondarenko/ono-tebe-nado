@@ -7,7 +7,7 @@ body {
     max-width: 1052px;
     display: grid;  
     grid-template-columns: 1fr 148px 1fr;
-    justify-items: center;
+    justify-items: stretch;
     align-items: center;
     margin: 92px auto 96px;
     padding-left: 26px;
@@ -15,17 +15,17 @@ body {
 }
 
 .header__menu {
-    align-content: space-between;
+    align-content: flex-start;
 }
 
 .header__links-list {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
 }
 
 .header__links-list-item {
-    margin-right: 26px;
+    margin-right: 34px;
+    padding-top: 5px;
  }
  
 .header__logo {
@@ -41,16 +41,16 @@ body {
  }
  
 .address {
-    justify-self: end;
     max-width: 240px;
     width: 100%;
+    justify-self: end;
  }
 
 .cover {
     position: relative;
-    max-height: 757px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
+    background-position: center;
     z-index: -1;
 }
 
@@ -69,10 +69,9 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    /*row-gap: 20px;*/
-    padding: 165px 50px 135px;
+    row-gap: 20px;
+    padding: 165px 50px 0;
     max-width: 1100px;
-
 }
 
 .aligned-text {
@@ -82,7 +81,7 @@ body {
 .cover-description {
     z-index: 1;
     position: relative;
-    padding: 0 50px 51px 78px;
+    padding: 135px 50px 51px 78px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -111,7 +110,6 @@ body {
     max-width: 334px;
     min-height: 563px;
     flex-grow: 1;
-
 }
 
 .card-link {
@@ -166,8 +164,7 @@ body {
 }
 
 .about {
-    margin: 146px 24px 0;
-    max-height: 595px;
+    margin: 116px 24px 0;
 }
 
 .about__column {
@@ -213,8 +210,8 @@ body {
     display: flex;  
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin: 180px auto 88px;
+    align-items: start;
+    margin: 180px auto 83px;
 }
 
 .footer__social-list {
