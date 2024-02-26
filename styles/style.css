@@ -26,25 +26,25 @@ body {
 .header__links-list-item {
     margin-right: 34px;
     padding-top: 5px;
- }
- 
+}
+
 .header__logo {
     display: block;
     width: 148px;
     height: auto;
- }
+}
 
 .header__logo-image {
     height: 105px;
     width: 100%;
     display: block;
- }
+}
  
 .address {
     max-width: 240px;
     width: 100%;
     justify-self: end;
- }
+}
 
 .cover {
     position: relative;
