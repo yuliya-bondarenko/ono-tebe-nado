@@ -55,7 +55,7 @@ body {
     justify-self: end;
 }
 
-.lots__address {
+.address__item {
     font-style: normal;
     font-size: 18px;
     line-height: 24px;
@@ -67,7 +67,6 @@ body {
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-position: center;
-    z-index: -1;
     color:#fff;
 }
 
@@ -156,8 +155,14 @@ body {
 }
 
 .bet-button:hover {
-    background-color: rgb(81, 103, 175);
-    color: pink;
+    background-color: rgb(252, 252, 253);
+    color: rgb(5, 5, 5);
+    transition: background-color 0.5s linear;
+}
+
+a:hover {
+    color: rgb(223, 218, 218);
+    transition: color 0.1s linear;
 }
 
 .lots {
